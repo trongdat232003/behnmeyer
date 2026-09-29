@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Behn Meyer Việt Nam | Đối Tác Chiến Lược Cung Ứng Hóa Chất &amp; Nguyên Liệu Chuyên Ngành</title>
+    <!-- Inter & Plus Jakarta Sans Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <!-- Tailwind CSS v3 with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#09213d',
+                            dark: '#06162a',
+                            blue: '#005ea6',
+                            royal: '#0a4275',
+                            accent: '#00a3e0',
+                            cyan: '#00b4d8',
+                            slate: '#f4f7fb',
+                            border: '#e2e8f0',
+                            card: '#ffffff'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sans: ['"Inter"', 'sans-serif']
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Typography & Global CSS -->
+    <style data-purpose="typography">
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+    <!-- Custom Effects & Subtle Animations -->
+    <style data-purpose="custom-effects">
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-glow {
+            background: radial-gradient(circle at 75% 35%, rgba(0, 163, 224, 0.18) 0%, rgba(9, 33, 61, 0) 65%);
+        }
+
+        .card-hover {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(9, 33, 61, 0.12), 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .industry-tile:hover img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-700 antialiased selection:bg-brand-blue selection:text-white">
+    <!-- BEGIN: TopNotificationBar -->
+    <div class="bg-brand-dark text-slate-300 text-xs py-2 border-b border-brand-navy/60 hidden md:block"
+        data-purpose="top-bar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span class="inline-flex items-center"><i class="fa-solid fa-earth-americas mr-2 text-brand-accent"></i>
+                    Mạng lưới toàn cầu tại hơn 100 quốc gia</span>
+                <span class="inline-flex items-center"><i class="fa-solid fa-award mr-2 text-brand-accent"></i> Hơn 180
+                    năm thành lập &amp; phát triển bền vững</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a class="hover:text-white transition" href="#contact">Hỗ trợ kỹ thuật B2B</a>
+                <span class="text-slate-600">|</span>
+                <a class="hover:text-white transition" href="tel:+842838200000"><i
+                        class="fa-solid fa-phone-volume mr-1 text-brand-accent"></i> (+84) 28 3820 0000</a>
+            </div>
+        </div>
+    </div>
+    <!-- END: TopNotificationBar -->
+    <!-- BEGIN: MainHeader -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-slate-100 shadow-sm transition-all"
+        data-purpose="main-navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo Section -->
+                <a class="flex items-center space-x-3 group" data-purpose="brand-logo" href="#">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-brand-navy flex items-center justify-center text-white font-heading font-extrabold text-xl shadow-md tracking-tighter">
+                        BM
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading font-extrabold text-xl tracking-wider text-brand-navy group-hover:text-brand-blue transition">BEHN
+                            MEYER</span>
+                        <span class="text-[10px] tracking-widest uppercase font-semibold text-slate-400 -mt-1">A World
+                            of Capabilities</span>
+                    </div>
+                </a>
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-7" data-purpose="nav-links">
+                    <a class="text-sm font-semibold text-slate-700 hover:text-brand-blue transition" href="#about">Về
+                        chúng tôi</a>
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-sm font-semibold text-slate-700 hover:text-brand-blue transition py-2">
+                            Lĩnh vực kinh doanh
+                            <i
+                                class="fa-solid fa-chevron-down text-[10px] ml-1.5 transition-transform group-hover:rotate-180 text-slate-400"></i>
+                        </button>
+                        <!-- Dropdown -->
+                        <div
+                            class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a class="block px-4 py-2.5 text-xs font-semibold text-slate-700 hover:bg-brand-slate hover:text-brand-blue"
+                                href="#pillars">Nguyên liệu &amp; Thực phẩm</a>
+                            <a class="block px-4 py-2.5 text-xs font-semibold text-slate-700 hover:bg-brand-slate hover:text-brand-blue"
+                                href="#pillars">Hóa chất hiệu năng cao</a>
+                            <a class="block px-4 py-2.5 text-xs font-semibold text-slate-700 hover:bg-brand-slate hover:text-brand-blue"
+                                href="#pillars">Chất dẻo &amp; Polymer</a>
+                        </div>
+                    </div>
+                    <a class="text-sm font-semibold text-slate-700 hover:text-brand-blue transition"
+                        href="#industries">Ngành công nghiệp</a>
+                    <a class="text-sm font-semibold text-slate-700 hover:text-brand-blue transition"
+                        href="#sustainability">Phát triển bền vững</a>
+                    <a class="text-sm font-semibold text-slate-700 hover:text-brand-blue transition"
+                        href="#partners">Đối tác &amp; Tin tức</a>
+                </nav>
+                <!-- Right Action Items (Search, Language, CTA) -->
+                <div class="hidden sm:flex items-center space-x-4" data-purpose="nav-actions">
+                    <button aria-label="Tìm kiếm"
+                        class="w-9 h-9 rounded-full flex items-center justify-center text-slate-500 hover:text-brand-blue hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                    </button>
+                    <!-- Language Selector -->
+                    <div
+                        class="inline-flex items-center text-xs font-bold text-slate-600 bg-slate-100 px-2.5 py-1.5 rounded-lg border border-slate-200">
+                        <span class="text-brand-blue cursor-pointer">VN</span>
+                        <span class="mx-1.5 text-slate-300">/</span>
+                        <span class="text-slate-400 hover:text-slate-700 cursor-pointer">EN</span>
+                    </div>
+                    <!-- Contact Button -->
+                    <a class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-brand-navy hover:bg-brand-blue text-white text-xs font-semibold uppercase tracking-wider transition shadow-sm"
+                        href="#contact">
+                        Liên hệ
+                    </a>
+                </div>
+                <!-- Mobile Hamburger -->
+                <button aria-label="Menu Mobile" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- END: MainHeader -->
+    <main>
+        <!-- BEGIN: HeroSection -->
+        <section class="relative bg-brand-navy text-white overflow-hidden" data-purpose="hero-section">
+            <!-- Background Image Overlay with Corporate Skyline -->
+            <div class="absolute inset-0 z-0">
+                <img alt="Ho Chi Minh City Skyline Modern Vietnam"
+                    class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRa7WE24Sk_zJfrkLpfuXrarB4mAELNEyRC4GFQ99FK6Ga3ReRKGg9nPagjxHyYDf_EkmcY3Q9pc0DBLIMngjC8-Gz6Oyfi179j9e50INeGCiqPevDYaqm88GYolHYnIqyzW-vHq9FLJ6c_dulqr0bCcRRUvXFuteelellR0x6pIWn_eUyMQz325VdYowTDEHVa1t0UyApsSgkHlm7u6sVnL_7CAHTTZ8Irq_W_E44bcpyDXS9XpZ9jA" />
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy/95 to-brand-navy/60"></div>
+                <div class="absolute inset-0 hero-glow pointer-events-none"></div>
+                <!-- Decorative Vector Mesh -->
+                <div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-10 pointer-events-none hidden lg:block">
+                    <svg class="w-full h-full text-brand-cyan fill-current" viewbox="0 0 400 400">
+                        <polygon fill="none" points="200,20 380,110 380,310 200,400 20,310 20,110" stroke="currentColor"
+                            stroke-dasharray="4,4" stroke-width="1.5"></polygon>
+                        <polygon fill="none" points="200,60 340,135 340,285 200,360 60,285 60,135" stroke="currentColor"
+                            stroke-width="1.2"></polygon>
+                        <circle cx="200" cy="20" r="6"></circle>
+                        <circle cx="380" cy="110" r="6"></circle>
+                        <circle cx="380" cy="310" r="6"></circle>
+                        <circle cx="200" cy="400" r="6"></circle>
+                        <circle cx="20" cy="310" r="6"></circle>
+                        <circle cx="20" cy="110" r="6"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+                <div class="max-w-3xl">
+
+                    <!-- Headline -->
+                    <h1
+                        class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight text-white mb-6">
+                        Một thế giới đầy tiềm năng. <br class="hidden sm:inline" />
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-brand-accent">Vững
+                            bước vươn xa.</span>
+                    </h1>
+                    <!-- Subhead -->
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal mb-10 max-w-2xl">
+                        Chúng tôi cung cấp nguyên liệu, hóa chất kỹ thuật và các giải pháp chuyên ngành cho nhiều lĩnh
+                        vực công nghiệp, đồng hành cùng doanh nghiệp Việt Nam trên hành trình phát triển bền vững.
+                    </p>
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
+                        <a class="inline-flex items-center justify-center px-7 py-3.5 rounded-xl bg-brand-blue hover:bg-brand-accent text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-brand-blue/30 group"
+                            href="#pillars">
+                            <span>Khám phá giải pháp</span>
+                            <i
+                                class="fa-solid fa-arrow-right ml-2.5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                        <a class="inline-flex items-center justify-center px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-sm backdrop-blur-sm transition-all duration-300"
+                            href="#contact">
+                            <i class="fa-regular fa-comment-dots mr-2.5 text-brand-accent"></i>
+                            <span>Liên hệ đội ngũ chuyên gia</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Metric Strip -->
+            <div class="relative z-10 border-t border-white/10 bg-brand-dark/40 backdrop-blur-md">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+                        <div class="py-2">
+                            <span class="block text-2xl font-bold font-heading text-white">1840</span>
+                            <span class="text-xs text-slate-400">Năm thành lập tập đoàn</span>
+                        </div>
+                        <div class="py-2">
+                            <span class="block text-2xl font-bold font-heading text-brand-accent">&gt; 100</span>
+                            <span class="text-xs text-slate-400">Quốc gia hiện diện toàn cầu</span>
+                        </div>
+                        <div class="py-2">
+                            <span class="block text-2xl font-bold font-heading text-white">&gt; 2.000</span>
+                            <span class="text-xs text-slate-400">Chuyên gia &amp; nhân sự toàn cầu</span>
+                        </div>
+                        <div class="py-2">
+                            <span class="block text-2xl font-bold font-heading text-brand-accent">3</span>
+                            <span class="text-xs text-slate-400">Mảng trụ cột kinh doanh cốt lõi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: HeroSection -->
+        <!-- BEGIN: AboutSection -->
+        <section class="py-20 lg:py-28 bg-brand-slate" data-purpose="about-section" id="about">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Top Grid: Story & Facility Image -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Left Column: Story & Overview -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div
+                            class="inline-flex items-center space-x-2 text-brand-blue font-bold text-xs uppercase tracking-wider">
+                            <span class="w-6 h-0.5 bg-brand-blue"></span>
+                            <span>VỀ BEHN MEYER VIỆT NAM</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-brand-navy leading-snug">
+                            Đối tác chiến lược trong cung ứng giải pháp chuyên ngành
+                        </h2>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Behn Meyer Việt Nam là thành viên của Tập đoàn Behn Meyer (Đức) với lịch sử từ năm 1840.
+                            Hiện diện tại hơn 100 quốc gia, tại thị trường Việt Nam, chúng tôi tập trung vào 3 mảng kinh
+                            doanh chính: <strong class="text-brand-navy font-semibold">Nguyên liệu, Hóa chất hiệu năng
+                                cao và Chất dẻo &amp; Polymer</strong>, mang đến các giải pháp tối ưu cho nhiều ngành
+                            công nghiệp trọng điểm.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Với phương châm lấy đối tác và khách hàng làm trọng tâm, chúng tôi không chỉ cung ứng hóa
+                            chất và phụ gia đạt tiêu chuẩn quốc tế mà còn hỗ trợ tư vấn kỹ thuật chuyên sâu, chuyển giao
+                            công nghệ và tối ưu quy trình sản xuất.
+                        </p>
+                        <div class="pt-2">
+                            <a class="inline-flex items-center font-bold text-sm text-brand-blue hover:text-brand-navy group transition"
+                                href="#pillars">
+                                <span>Tìm hiểu thêm về chúng tôi</span>
+                                <i
+                                    class="fa-solid fa-arrow-right-long ml-2 text-xs transition-transform group-hover:translate-x-1.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right Column: Facility Image -->
+                    <div class="lg:col-span-5">
+                        <div class="relative rounded-2xl overflow-hidden shadow-lg border border-white group">
+                            <!-- Facility / Warehouse Image -->
+                            <img alt="Behn Meyer Advanced Laboratory and Logistics Facility"
+                                class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCGaHMdSw09Ba4K3JoM_G3W_xvlhqyBAmNIKLyXlwo3mb5A4rTRyCJVDkoAckBqb0aPzqobZKwzbWgoxhrh0z9wtbdFsU7qMm8QWaFl0q6EEwIaEvSuvQKTYSicoiLvLjIVUfsRzeGihj1BjXrE7wE3uSizJ-DYwjks7I9ihjl15g5Ph_B46tn-pOWFNhlSqe5OwOxOkl70uWiGGlMK6RXkJh6SA8uGlpYkxIUnnARJJgaeFt8fxT3OQ" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent">
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <span class="text-xs uppercase font-bold tracking-widest text-brand-accent block">Hạ
+                                    tầng chuẩn quốc tế</span>
+                                <span class="text-sm font-semibold">Trung tâm kỹ thuật &amp; kho vận hiện đại tại Việt
+                                    Nam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credibility Highlights Row / Tách ra phần riêng bên dưới -->
+                <div class="mt-12 lg:mt-16 pt-10 border-t border-slate-200/80">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Credibility Card 1 -->
+                        <div
+                            class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start space-x-4 card-hover">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-brand-navy text-base">Hơn 100 quốc gia</h3>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed">Mạng lưới kết nối đối
+                                    tác và chuỗi phân phối hóa
+                                    chất trên toàn cầu.</p>
+                            </div>
+                        </div>
+                        <!-- Credibility Card 2 -->
+                        <div
+                            class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start space-x-4 card-hover">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-brand-navy text-base">Hơn 2.000 nhân sự</h3>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed">Đội ngũ chuyên gia hóa
+                                    chất, kỹ sư ứng dụng và tư
+                                    vấn viên toàn thế giới.</p>
+                            </div>
+                        </div>
+                        <!-- Credibility Card 3 -->
+                        <div
+                            class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start space-x-4 card-hover">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-brand-navy text-base">Tại Việt Nam</h3>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed">Đồng hành sâu rộng
+                                    cùng doanh nghiệp sản xuất qua
+                                    3 trụ cột vững chắc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: AboutSection -->
+        <!-- BEGIN: PillarsSection -->
+        <section class="py-20 lg:py-28 bg-white" data-purpose="core-pillars-section" id="pillars">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span
+                        class="inline-block text-xs font-bold uppercase tracking-wider text-brand-blue bg-blue-50 px-3.5 py-1.5 rounded-full mb-3">
+                        DANH MỤC NĂNG LỰC
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-brand-navy tracking-tight">
+                        3 Mảng Kinh Doanh Chủ Lực
+                    </h2>
+                    <p class="mt-3 text-slate-600 text-sm sm:text-base">
+                        Cung cấp giải pháp toàn diện từ nguyên liệu thô tinh khiết đến các hợp chất kỹ thuật phức tạp
+                        phục vụ ngành chế tạo &amp; sản xuất tiên tiến.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Pillar 1: Nguyên liệu -->
+                    <div class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col card-hover"
+                        data-purpose="pillar-ingredients">
+                        <!-- Pillar Image -->
+                        <div class="relative h-56 overflow-hidden">
+                            <img alt="Nguyên liệu nông nghiệp thực phẩm dược phẩm"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfP_HiU8OHDO4Sm32L5I28DW0Lj0ChLa87TXjf6qEkQPraeJAH7argboxZ8Ck6DpXAb_HNcfyu1s2QRTAIsQrBPnsV-oSoA6wzRlZickny3jEJEZWy9So6rgvDR6oqA_N1u5wonlYwtPM7bQABw5FOHOxyQ3CgLzOyJYayB6uPS20M17tALUhC30FfZZXKSj_jySFtFxBOGQXUf3oBm3B0_MTLEiJ3OcvFisr5pV_tHCWqnOV-qjRXpQ" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                            </div>
+                            <!-- Floating Icon Badge -->
+                            <div
+                                class="absolute top-4 left-4 w-11 h-11 rounded-xl bg-brand-navy text-brand-accent flex items-center justify-center shadow-lg border border-white/20">
+                                <i class="fa-solid fa-seedling text-lg"></i>
+                            </div>
+                        </div>
+                        <!-- Content Area -->
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold font-heading text-brand-navy group-hover:text-brand-blue transition">
+                                    Nguyên liệu
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 mb-4 leading-relaxed">
+                                    Cung cấp các phụ gia, nguyên phụ liệu tự nhiên và hoạt chất dinh dưỡng cho chuỗi sản
+                                    xuất thực phẩm, vật nuôi và sức khỏe con người.
+                                </p>
+                                <div class="space-y-1.5 border-t border-slate-100 pt-3">
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Thực phẩm &amp; Đồ uống chế biến</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Dinh dưỡng vật nuôi &amp; Thủy sản</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Chăm sóc cá nhân &amp; Gia đình</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Dược phẩm y tế</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-4 border-t border-slate-100">
+                                <a class="inline-flex items-center font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition"
+                                    href="#contact">
+                                    <span>Khám phá chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pillar 2: Hóa chất hiệu năng cao -->
+                    <div class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col card-hover"
+                        data-purpose="pillar-performance-chemicals">
+                        <!-- Pillar Image -->
+                        <div class="relative h-56 overflow-hidden">
+                            <img alt="Hóa chất hiệu năng cao nhà máy công nghiệp"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv2uPGx6is1ccSqQabO2450aS9G-b7WGjOmDfOYxgo0r4H6cnuSqX9jJnTAr74tku6bQKsWGlniQY4X1eZxDYk1LtIguXawY1Lw0ntma7HrRahYPBayNA6VQeR6gF2K4SpxHGc1fauZ6iHiVTHeeY1GBFDaBiozca2taXPRZbCQgxnmrZnWDRuoT1K6McEE9QLr2zlWUWQycOT2RmoYGHrCBdkBM36mgYbeP-K6JerEaP_aR42xB6BiQ" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                            </div>
+                            <!-- Floating Icon Badge -->
+                            <div
+                                class="absolute top-4 left-4 w-11 h-11 rounded-xl bg-brand-navy text-brand-accent flex items-center justify-center shadow-lg border border-white/20">
+                                <i class="fa-solid fa-flask-vial text-lg"></i>
+                            </div>
+                        </div>
+                        <!-- Content Area -->
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold font-heading text-brand-navy group-hover:text-brand-blue transition">
+                                    Hóa chất hiệu năng cao
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 mb-4 leading-relaxed">
+                                    Các hợp chất xúc tác hóa học chất lượng cao, tăng cường độ bền, khả năng chịu lực và
+                                    hiệu quả cho các quy trình chế biến nặng.
+                                </p>
+                                <div class="space-y-1.5 border-t border-slate-100 pt-3">
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i> Sơn
+                                        phủ &amp; Hóa chất Xây dựng</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i> Dầu
+                                        khí &amp; Ngành năng lượng</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Ngành thuộc da &amp; Dệt may</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i> Hóa
+                                        chất xử lý nước công nghiệp</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-4 border-t border-slate-100">
+                                <a class="inline-flex items-center font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition"
+                                    href="#contact">
+                                    <span>Khám phá chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pillar 3: Chất dẻo & Polymer -->
+                    <div class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col card-hover"
+                        data-purpose="pillar-polymers">
+                        <!-- Pillar Image -->
+                        <div class="relative h-56 overflow-hidden">
+                            <img alt="Chất dẻo polymer cao su hạt nhựa kỹ thuật"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPlLuTyPvsVnBe3R8J6IjyIzki0iYwj08weRhcQf4S09iCO6LUPDcOm_Lret3PIzSRQ1gRFJnDNrhJMvL9BnDTbVZ1XELMOC4-uA5tC9J545sMIo3nyuyIoxt3GEu3mvBChpB-AGb2LIWsEN6iUfHg5IuJ15xReytwC1hIdGhaC1FLhtFB_QOj0SI4ZVqXclgRKR8q9ANQ1jtkcZyiURE2s4lG0il_38fwuwpJ4e0XFAhIyQKOPxjE7A" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                            </div>
+                            <!-- Floating Icon Badge -->
+                            <div
+                                class="absolute top-4 left-4 w-11 h-11 rounded-xl bg-brand-navy text-brand-accent flex items-center justify-center shadow-lg border border-white/20">
+                                <i class="fa-solid fa-cubes-stacked text-lg"></i>
+                            </div>
+                        </div>
+                        <!-- Content Area -->
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold font-heading text-brand-navy group-hover:text-brand-blue transition">
+                                    Chất dẻo &amp; Polymer
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 mb-4 leading-relaxed">
+                                    Công thức phụ gia polymer tiên tiến cho ngành đùn ép nhựa, công nghiệp sản xuất lốp
+                                    xe, phụ tùng ô tô và chất đàn hồi.
+                                </p>
+                                <div class="space-y-1.5 border-t border-slate-100 pt-3">
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i> Phụ
+                                        gia chuyên dụng ngành Cao su</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Nhựa kỹ thuật &amp; Hạt compound</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i>
+                                        Ngành Lốp xe &amp; Cơ khí chính xác</div>
+                                    <div class="flex items-center text-xs text-slate-600"><i
+                                            class="fa-regular fa-circle-check text-brand-blue mr-2 text-[10px]"></i> Vật
+                                        liệu ma sát cao cấp</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-4 border-t border-slate-100">
+                                <a class="inline-flex items-center font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition"
+                                    href="#contact">
+                                    <span>Khám phá chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: PillarsSection -->
+        <!-- BEGIN: EnterpriseTargetSection -->
+        <section class="py-20 bg-brand-slate relative overflow-hidden" data-purpose="target-audience-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xl border border-slate-200/80">
+                    <!-- Top Row: Core Target Value Banner & Corporate Image -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                        <!-- Left Column: Core Target Value Banner -->
+                        <div
+                            class="lg:col-span-7 bg-brand-navy text-white rounded-2xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden">
+                            <div class="relative z-10">
+                                <span
+                                    class="text-xs uppercase font-bold text-brand-accent tracking-widest block mb-3">KHÁCH
+                                    HÀNG MỤC TIÊU</span>
+                                <h3
+                                    class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-heading leading-tight mb-4">
+                                    Doanh nghiệp là trung tâm
+                                </h3>
+                                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+                                    Chúng tôi phục vụ chủ yếu cho phân khúc B2B, cung cấp nguyên liệu, hóa chất kỹ thuật
+                                    và
+                                    các giải pháp chuyên ngành cho các doanh nghiệp sản xuất lớn trong nhiều lĩnh vực
+                                    công
+                                    nghiệp cốt lõi tại Việt Nam.
+                                </p>
+                            </div>
+                            <div class="relative z-10 pt-8">
+                                <a class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-blue hover:bg-brand-royal text-white text-xs sm:text-sm font-semibold uppercase tracking-wider transition shadow-sm border border-brand-accent/30"
+                                    href="#contact">
+                                    <span>Xem chi tiết đối tác</span>
+                                    <i class="fa-solid fa-arrow-right ml-2.5"></i>
+                                </a>
+                            </div>
+                            <!-- Background subtle pattern -->
+                            <div
+                                class="absolute -bottom-10 -right-10 w-52 h-52 rounded-full bg-brand-royal/40 blur-2xl pointer-events-none">
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Corporate Image Partner Representation -->
+                        <div class="lg:col-span-5 rounded-2xl overflow-hidden relative shadow-md min-h-[280px]">
+                            <img alt="B2B Business Consulting and Partnership"
+                                class="w-full h-full object-cover min-h-[280px] hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj14FdmhqBONgcKivKtDPBWs2cB7ujxBXocu35nDoBObj0gHeylRgHvjHVrBZPgYiCw-bvAG_9aE8XilIYndw7pE-uvvkM2vNBFs9E3_6sex9rzLaaVv5d6QH54uLhMcWBbBdzhxiwOMkqUf7_1KVYZSyKxNIbDtoYb-OvnGJAW8nb1BLnNq9ui2OfpWJ4z-j_Z9qTBoyaevB31Nc_787bolFmlOtMNfu2FWReYPz6iabf9pdNHjSKiw" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-brand-navy/85 via-brand-navy/30 to-transparent">
+                            </div>
+                            <div class="absolute bottom-5 left-5 right-5 text-white">
+                                <span
+                                    class="inline-block px-2.5 py-1 rounded bg-brand-accent text-brand-navy font-bold text-xs uppercase mb-2">Chuyên
+                                    gia B2B</span>
+                                <p class="text-sm font-semibold leading-snug">Đội ngũ kỹ thuật viên song hành cùng giải
+                                    pháp của doanh nghiệp bạn.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Đối tượng đồng hành tách ra thành phần riêng bên dưới -->
+                    <div class="mt-10 pt-8 border-t border-slate-200/80">
+                        <div class="mb-6 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block">ĐỐI TƯỢNG ĐỒNG
+                                HÀNH</span>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
+                            <!-- Persona item 1 -->
+                            <div
+                                class="bg-slate-50/80 hover:bg-white p-5 rounded-2xl border border-slate-200/70 hover:border-brand-blue/30 hover:shadow-md transition-all duration-300 card-hover flex flex-col justify-between">
+                                <div>
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-base mb-3.5">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <h4 class="text-sm font-bold text-brand-navy leading-snug">Giám đốc điều hành, CEO
+                                        &amp; Ban Quản trị</h4>
+                                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Tối ưu hóa chi phí nguyên
+                                        vật liệu, chuỗi cung ứng vững chắc.</p>
+                                </div>
+                            </div>
+                            <!-- Persona item 2 -->
+                            <div
+                                class="bg-slate-50/80 hover:bg-white p-5 rounded-2xl border border-slate-200/70 hover:border-brand-blue/30 hover:shadow-md transition-all duration-300 card-hover flex flex-col justify-between">
+                                <div>
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-base mb-3.5">
+                                        <i class="fa-solid fa-industry"></i>
+                                    </div>
+                                    <h4 class="text-sm font-bold text-brand-navy leading-snug">Chủ sở hữu trang trại
+                                        &amp; Cơ sở sản xuất</h4>
+                                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Nâng cao hiệu suất sinh
+                                        học, năng suất canh tác &amp; gia công.</p>
+                                </div>
+                            </div>
+                            <!-- Persona item 3 -->
+                            <div
+                                class="bg-slate-50/80 hover:bg-white p-5 rounded-2xl border border-slate-200/70 hover:border-brand-blue/30 hover:shadow-md transition-all duration-300 card-hover flex flex-col justify-between">
+                                <div>
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-base mb-3.5">
+                                        <i class="fa-solid fa-microscope"></i>
+                                    </div>
+                                    <h4 class="text-sm font-bold text-brand-navy leading-snug">Quản lý kỹ thuật, QA/QC,
+                                        R&amp;D &amp; Phòng Thu mua</h4>
+                                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Hỗ trợ thử nghiệm mẫu công
+                                        thức và bảo chứng chứng nhận quốc tế.</p>
+                                </div>
+                            </div>
+                            <!-- Persona item 4 -->
+                            <div
+                                class="bg-slate-50/80 hover:bg-white p-5 rounded-2xl border border-slate-200/70 hover:border-brand-blue/30 hover:shadow-md transition-all duration-300 card-hover flex flex-col justify-between">
+                                <div>
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-base mb-3.5">
+                                        <i class="fa-solid fa-hand-holding-droplet"></i>
+                                    </div>
+                                    <h4 class="text-sm font-bold text-brand-navy leading-snug">Chuyên gia kỹ thuật
+                                        chuyên ngành</h4>
+                                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Lĩnh vực chăn nuôi, thủy
+                                        hải sản, hóa dầu, làm đẹp &amp; thực phẩm.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: EnterpriseTargetSection -->
+        <!-- BEGIN: DifferentiatorsSection -->
+        <section class="py-20 bg-white" data-purpose="differentiators-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-14">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-blue block mb-2">ĐIỂM BÁN HÀNG
+                        ĐỘC ĐÁO</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-brand-navy tracking-tight">
+                        Tạo nên sự khác biệt
+                    </h2>
+                </div>
+                <!-- 3 Feature Pillars: Trải đều 3 cột rộng rãi -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                    <!-- Item 1 -->
+                    <div
+                        class="bg-brand-slate hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-brand-blue/30 hover:shadow-lg transition-all duration-300 card-hover flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-white text-brand-blue flex items-center justify-center shadow-sm text-xl mb-6">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2.5">Am hiểu thị trường Việt
+                                Nam</h3>
+                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                                Hiểu rõ nhu cầu địa phương, văn hóa và quy chuẩn vận hành nhằm đồng hành dài lâu và bền
+                                bỉ.
+                            </p>
+                        </div>
+                        <div
+                            class="pt-5 mt-6 border-t border-slate-200/60 text-brand-blue text-xs sm:text-sm font-semibold flex items-center">
+                            <i class="fa-solid fa-circle-check mr-2 text-brand-accent"></i> Giải pháp bản địa hóa
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        class="bg-brand-slate hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-brand-blue/30 hover:shadow-lg transition-all duration-300 card-hover flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-white text-brand-blue flex items-center justify-center shadow-sm text-xl mb-6">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2.5">Kiểm soát chuỗi cung ứng
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                                Chủ động nguồn cung từ các nhà máy quốc tế, cam kết đảm bảo chất lượng và tiến độ giao
+                                hàng nghiêm ngặt.
+                            </p>
+                        </div>
+                        <div
+                            class="pt-5 mt-6 border-t border-slate-200/60 text-brand-blue text-xs sm:text-sm font-semibold flex items-center">
+                            <i class="fa-solid fa-circle-check mr-2 text-brand-accent"></i> Chuẩn mực Logistics
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        class="bg-brand-slate hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-brand-blue/30 hover:shadow-lg transition-all duration-300 card-hover flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-white text-brand-blue flex items-center justify-center shadow-sm text-xl mb-6">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2.5">Phủ đa ngành công nghiệp
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                                Đáp ứng linh hoạt danh mục sản phẩm phong phú cho hàng chục ngành sản xuất công nghiệp
+                                then chốt.
+                            </p>
+                        </div>
+                        <div
+                            class="pt-5 mt-6 border-t border-slate-200/60 text-brand-blue text-xs sm:text-sm font-semibold flex items-center">
+                            <i class="fa-solid fa-circle-check mr-2 text-brand-accent"></i> Danh mục toàn diện
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sustainability Highlight Card: Tách thành hàng riêng nổi bật bên dưới -->
+                <div class="mt-8 sm:mt-10 relative rounded-3xl overflow-hidden shadow-xl min-h-[320px] flex items-center"
+                    id="sustainability">
+                    <img alt="Green Environmental Sustainability in Vietnam"
+                        class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGs1-f5Zen9kqAqna8O1FDm4-zd2tuDZKQcUdPyc75bMF_THDH1-WnWZWi3qIykrd1-jreEtx6NuvpbcxRdudzvGyxRW6nMKLEaNOjlafsVenn7FwtFvRdIh2iBDaU-RtruaiDtBuTEUwxAGcgjXl1_jYmufyKhVB7ESjF_pKRDglB3g4GLykSVKaApHUmz9Hh7Y1OK_I7Hj06hpss_DLXsjl0iLjXbSrIPy3Sma36rnZWd1JaI1cBWg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/75 to-transparent hidden sm:block">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-navy/95 via-brand-navy/80 to-transparent sm:hidden">
+                    </div>
+                    <div class="relative z-10 p-8 sm:p-12 text-white max-w-2xl">
+                        <span
+                            class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-4">
+                            <i class="fa-solid fa-leaf mr-1.5"></i> Phát Triển Bền Vững (ESG)
+                        </span>
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading mb-3 leading-tight">
+                            Kiến tạo giá trị bền vững cùng doanh nghiệp Việt
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-6 max-w-xl">
+                            Behn Meyer cam kết thúc đẩy các giải pháp hóa học xanh, giảm thiểu dấu chân carbon và
+                            bảo tồn nguồn tài nguyên cho các thế hệ tương lai.
+                        </p>
+                        <a class="inline-flex items-center px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold uppercase tracking-wider transition shadow-md"
+                            href="#contact">
+                            <span>Chiến lược bền vững</span>
+                            <i class="fa-solid fa-arrow-right-long ml-2.5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: DifferentiatorsSection -->
+        <!-- BEGIN: IndustriesMatrixSection -->
+        <section class="py-20 bg-brand-slate" data-purpose="industries-matrix-section" id="industries">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-blue block mb-2">CÁC NGÀNH
+                            CÔNG NGHIỆP TIÊU BIỂU</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-brand-navy tracking-tight">
+                            Giải pháp cho nhiều ngành công nghiệp
+                        </h2>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <a class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-brand-blue hover:text-brand-navy transition"
+                            href="#contact">
+                            <span>Khám phá tất cả ngành hàng</span>
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- 8 Industries Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                    <!-- Industry 1 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-livestock">
+                        <img alt="Chăn nuôi &amp; Thủy sản"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTRfAN8_R7fCODiLnlcNemVOmlFX_AGC194Dk1lo1cJOyhDSkftZgADJ5YCes2zmM7H6H-calJGJ8XCXYCV0A-__j8VDtiA1u4sTkePuvXGcqbD-fFpCs9_XDjtcBigwh2NWIr_RNzjimw3KSowiM1xH8agnbaazPJGuH7N6BgDdNgJX3oE8tS_iaI4WFQ6_cc91GmLO2WC_CNydvhW6tMbE-yXuUXnprVii67gpaU_xVqbEMvPn6TsA" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Chăn
+                                nuôi &amp; Thủy sản</span>
+                            <span class="text-[10px] text-slate-300">Phụ gia dinh dưỡng</span>
+                        </div>
+                    </div>
+                    <!-- Industry 2 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-food">
+                        <img alt="Thực phẩm &amp; Đồ uống"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC75f_wSK26BtzvRnpzuvOfVgWnYWO3Yg05R_xa4AcOarqtaVKYmohLDuuRBiDL_oo_iu6l2Oj_xAptJNVT1UxSyzmB1Jkh0DjeIAhtx7tHkJooPyLFchjgMdtP0-nPevDE8LwZcbHkZCf75edsqlNbsClHSZV_HhsdWkwa2D-OY1gUphk7ZLjFUAQd0YRrfBaoZT7a81jnqod5FXBM-CGc3H9XRF36yyJ65h4Bu9V0usqaN2rU4n4Szw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Thực
+                                phẩm &amp; Đồ uống</span>
+                            <span class="text-[10px] text-slate-300">Nguyên liệu an toàn</span>
+                        </div>
+                    </div>
+                    <!-- Industry 3 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-personal-care">
+                        <img alt="Chăm sóc cá nhân &amp; Gia đình"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5yIsOonA1MZtKrlaHGAjI5aOdSK9U75TPRPjS48-YbDyPksawl1OpOxX0h6lJrPGwgyXDUXUcRp4V-xH-Ja_3l9lgToazItUHcZddxf_v1PKZCRs7Pm9jMJZfHStJpKYyDp06i4imOGPYSE1Afx_sNHCl06bN5YiyzEE6_UujB7dWjKGeV5ooouyXO9zZ0VH1T-5X6p9LGFQfJ0I_Utb0rssvOBvqgbi3qiikz2oQvt5ZwkRE0BVWgw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Chăm
+                                sóc cá nhân &amp; Gia đình</span>
+                            <span class="text-[10px] text-slate-300">Mỹ phẩm &amp; Hóa phẩm</span>
+                        </div>
+                    </div>
+                    <!-- Industry 4 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-textile">
+                        <img alt="Dệt may &amp; Da giày"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtvr0MqtLhm15QtgOPjh_wL_oOlokTTJ--3hu8u5-v7PRO-HzivaEcAoGMeYxsa8KgzFu_898s3O04myXMpv5aA6_WQ09bVRApZzgIZgbdE62w0EzAFDPNr91sGyacMSVs8rkj-xpEsX-RVkV8r5zd2VOiqV8AqhqQ6tk16k5hoi6GwH9rhF_TnAuqde7VkOmMkbPFq9KyerDTgXUNgpANxb0Gc4opQxL4yMdTdYURwSevf4QAXgw-MA" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Dệt
+                                may &amp; Da</span>
+                            <span class="text-[10px] text-slate-300">Xử lý nhuộm &amp; hoàn tất</span>
+                        </div>
+                    </div>
+                    <!-- Industry 5 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-coating">
+                        <img alt="Sơn phủ &amp; Xây dựng"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmfrDHaUDKmEJvUuDXHOIdCi9ZWBQmKQ7CmMrr6qvrVssNDR6g33awjhxzNcTMl8fYXi3nrjMQsbCdClAgqhVlYyFTnOo2LH4a9dau3i3RU3eI2gelUwdcm2LOxZ2ovT4Bo4gCLXBQCpAcWJTsS0Cl6NrWbQjf5VLWEGX1M8WBd6bAaw5E2KKnFN6Fe4pc_ub6bG7XZ9jEsnm80gAFqCglZMlkQcjheVTjC2HE2GD-gAeSw7O3wN4PDw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Sơn
+                                phủ &amp; Xây dựng</span>
+                            <span class="text-[10px] text-slate-300">Phụ gia liên kết cao</span>
+                        </div>
+                    </div>
+                    <!-- Industry 6 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-oil-gas">
+                        <img alt="Dầu khí &amp; Hóa dầu"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGk2ozu7knwp40KX0tBQ37BIjmh8p6VkfpDm2G5soZP_dPTCV5nvZ08bbSP5gC6esQtUqi42o8OqRcYBLf56Uu5eTZPWmVcVgHJL3k155tgGNkbYqgDO4dUfnDvwuNNthgfCiZr3Pz1UGnYc5kKQAeW2wP3UjFT-E-MlnkTmU5cjNS9DKlIbUtquD94VvmyfVkSFwGAQtwPk_efKqFOqf394ucbGtbYF7EZhhmrBGFmNZGC6Qcj0MzeA" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Dầu
+                                khí &amp; Hóa dầu</span>
+                            <span class="text-[10px] text-slate-300">Khai thác &amp; Chế biến</span>
+                        </div>
+                    </div>
+                    <!-- Industry 7 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-rubber">
+                        <img alt="Cao su &amp; Lốp xe"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF0iJZ2jmzK1ewWrU-ybT93RPAPN3Sd0odt4fpc_SdbyxirHZbadguRsrdEIHAS3c7h0TxDZQWqbm6OPZ9MtwXT5ACfN-nwo-5K74ILtbFBeID4JFob3wlDt9HDcy4YoyvWk0t1zd6fCe1zedDrgaHq43VElWdSUehFnOkDQRCttSTRT8lcPQHCoBkdDOFbDSUzGR80WQU5jSScv7JpIXLDf40zvgn82vGFxqVvpD_wfi0WvLSrYT_Mw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Cao
+                                su &amp; Lốp xe</span>
+                            <span class="text-[10px] text-slate-300">Chất lưu hóa &amp; tăng dai</span>
+                        </div>
+                    </div>
+                    <!-- Industry 8 -->
+                    <div class="group relative rounded-xl overflow-hidden h-36 sm:h-44 shadow-sm border border-slate-200 industry-tile cursor-pointer"
+                        data-purpose="industry-water">
+                        <img alt="Xử lý nước &amp; Polymer"
+                            class="w-full h-full object-cover transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHO7-rfCnf87uLpsjAZOW7-UiWo7m5vP662Pnc0SmdS9FeRlbcYqOsQNTNqjRzmeHU1VfRFW0nT3jjv7ucyZQdeBTEeGK3RLcM0xGm3IuUtaUgllv9PgdTHnf-sSBKJwXa3r4O_0oNG0lIZRXXvd9IdLLAPPSYgHiB7IkAmaYDxBbEDLfqnajq_KnNU1CpDD0WsUsJOtrdXi9-VA4siNzFkTC_R7HQMXFZTynM6uAhEFJMbtwtjOhcfw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-navy/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span
+                                class="text-xs sm:text-sm font-bold block font-heading group-hover:text-brand-accent transition">Xử
+                                lý nước &amp; Polymer</span>
+                            <span class="text-[10px] text-slate-300">Lắng lọc &amp; tái sử dụng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: IndustriesMatrixSection -->
+        <!-- BEGIN: PartnersTrustSection -->
+        <section class="py-16 bg-white border-y border-slate-200" data-purpose="global-partners-section" id="partners">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-xs uppercase font-bold tracking-wider text-slate-400 block mb-1">ĐỐI TÁC TIN CẬY
+                        TOÀN CẦU</span>
+                    <h3 class="text-xl sm:text-2xl font-bold font-heading text-brand-navy">
+                        Cùng các thương hiệu hàng đầu thế giới
+                    </h3>
+                </div>
+                <!-- Partner Brand Badges / Logos -->
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-85 hover:opacity-100 transition-opacity">
+                    <!-- Partner 1: Elanco representation -->
+                    <div
+                        class="h-16 px-6 py-2 rounded-xl bg-brand-slate border border-slate-200 flex items-center justify-center w-full max-w-[220px] transition hover:border-brand-blue">
+                        <span
+                            class="font-heading font-extrabold text-xl text-blue-700 tracking-tight flex items-center">
+                            <i class="fa-solid fa-capsules mr-2 text-brand-accent"></i> Elanco
+                        </span>
+                    </div>
+                    <!-- Partner 2: MSD Animal Health representation -->
+                    <div
+                        class="h-16 px-6 py-2 rounded-xl bg-brand-slate border border-slate-200 flex items-center justify-center w-full max-w-[220px] transition hover:border-brand-blue">
+                        <span class="font-heading font-bold text-lg text-emerald-700 tracking-tight flex items-center">
+                            <i class="fa-solid fa-dna mr-2 text-emerald-500"></i> MSD
+                            <span class="text-[10px] text-slate-500 ml-1 font-normal uppercase block">Animal
+                                Health</span>
+                        </span>
+                    </div>
+                    <!-- Partner 3: DKSH representation -->
+                    <div
+                        class="h-16 px-6 py-2 rounded-xl bg-brand-slate border border-slate-200 flex items-center justify-center w-full max-w-[220px] transition hover:border-brand-blue">
+                        <span class="font-heading font-black text-2xl text-red-600 tracking-widest flex items-center">
+                            DKSH
+                        </span>
+                    </div>
+                    <!-- Partner 4: Asia Ingredients Group representation -->
+                    <div
+                        class="h-16 px-6 py-2 rounded-xl bg-brand-slate border border-slate-200 flex items-center justify-center w-full max-w-[220px] transition hover:border-brand-blue">
+                        <span class="font-heading font-bold text-base text-teal-800 tracking-tight flex items-center">
+                            <i class="fa-solid fa-spa mr-1.5 text-teal-500"></i> Asia Ingredients
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: PartnersTrustSection -->
+        <!-- BEGIN: CallToActionBanner -->
+        <section class="relative bg-brand-navy py-16 sm:py-20 overflow-hidden" data-purpose="bottom-cta-banner"
+            id="contact">
+            <!-- Background subtle graphics -->
+            <div class="absolute inset-0 opacity-15">
+                <img alt="Corporate Business Team Meeting" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1NSycFdKpJmS8t5DepBkn_mnqzkq_fj5qzi5UcSGtnoqV18MO8swa7RQ0Xw7GelkVmAPcy9G76PKm1gtYDPbGl_YS8jCgPs3438KJ9Y9L4pWU3ZH-5nieVfjYsD60oriPfjb62UmEobWLYXg9-0McVZET7WRDrT5jKNHxTzOWW6WYPdXZVeOcBwIK8S6OkqGNbZyi_Qahkk8yREulsiIFUS2Uay2Ue7TG-jC6GRduOVLw_f7w7n46UA" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-royal/90"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div class="max-w-2xl text-center lg:text-left">
+                        <h2
+                            class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight leading-tight">
+                            Cùng kiến tạo một tương lai bền vững
+                        </h2>
+                        <p class="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Hãy liên hệ với chúng tôi để được tư vấn giải pháp kỹ thuật, cung ứng hóa chất và nguyên
+                            liệu chuyên biệt phù hợp nhất với nhu cầu doanh nghiệp của bạn.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                        <a class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-accent hover:bg-white hover:text-brand-navy text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl group"
+                            href="mailto:info@behnmeyer.com.vn">
+                            <span>Liên hệ ngay</span>
+                            <i
+                                class="fa-solid fa-arrow-right ml-2.5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: CallToActionBanner -->
+    </main>
+    <!-- BEGIN: MainFooter -->
+    <footer class="bg-brand-dark text-slate-400 text-xs border-t border-slate-800" data-purpose="site-footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <!-- Brand & Address Summary -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="w-9 h-9 rounded bg-brand-blue text-white flex items-center justify-center font-heading font-extrabold text-lg">
+                            BM
+                        </div>
+                        <div>
+                            <span class="font-heading font-extrabold text-base tracking-wider text-white block">BEHN
+                                MEYER VIỆT NAM</span>
+                            <span class="text-[10px] tracking-widest uppercase text-slate-400 block -mt-0.5">A World of
+                                Capabilities</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+                        Công ty TNHH Behn Meyer Việt Nam - Đối tác tin cậy hàng đầu trong phân phối hóa chất kỹ thuật,
+                        polymer và nguyên liệu công nghiệp chuyên ngành tại khu vực Đông Nam Á và toàn cầu.
+                    </p>
+                    <div class="space-y-1.5 text-xs text-slate-400 pt-2">
+                        <p><i class="fa-solid fa-location-dot text-brand-accent mr-2"></i> KCN Việt Nam - Singapore
+                            (VSIP), TP. Thuận An, Bình Dương / VP TP. Hồ Chí Minh</p>
+                        <p><i class="fa-solid fa-envelope text-brand-accent mr-2"></i> contact@behnmeyer.com.vn</p>
+                        <p><i class="fa-solid fa-phone text-brand-accent mr-2"></i> (+84) 28 3820 0000</p>
+                    </div>
+                </div>
+                <!-- Quick Links: Business -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider mb-4">Lĩnh vực kinh
+                        doanh</h4>
+                    <ul class="space-y-2.5">
+                        <li><a class="hover:text-white transition" href="#pillars">Nguyên liệu &amp; Thực phẩm</a></li>
+                        <li><a class="hover:text-white transition" href="#pillars">Dinh dưỡng vật nuôi &amp; Thủy
+                                sản</a></li>
+                        <li><a class="hover:text-white transition" href="#pillars">Hóa chất hiệu năng cao</a></li>
+                        <li><a class="hover:text-white transition" href="#pillars">Chất dẻo &amp; Phụ gia Polymer</a>
+                        </li>
+                        <li><a class="hover:text-white transition" href="#pillars">Hóa chất Xử lý nước</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links: Industries -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider mb-4">Ngành công
+                        nghiệp</h4>
+                    <ul class="space-y-2.5">
+                        <li><a class="hover:text-white transition" href="#industries">Nông nghiệp &amp; Chăn nuôi</a>
+                        </li>
+                        <li><a class="hover:text-white transition" href="#industries">Sơn phủ &amp; Xây dựng</a></li>
+                        <li><a class="hover:text-white transition" href="#industries">Dầu khí &amp; Hóa dầu</a></li>
+                        <li><a class="hover:text-white transition" href="#industries">Công nghiệp Cao su &amp; Ô tô</a>
+                        </li>
+                        <li><a class="hover:text-white transition" href="#industries">Dược phẩm &amp; Mỹ phẩm</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links: Corporate & Sustainability -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider mb-4">Tập đoàn &amp;
+                        Bền vững</h4>
+                    <ul class="space-y-2.5">
+                        <li><a class="hover:text-white transition" href="#about">Lịch sử từ năm 1840</a></li>
+                        <li><a class="hover:text-white transition" href="#sustainability">Cam kết Net Zero &amp; ESG</a>
+                        </li>
+                        <li><a class="hover:text-white transition" href="#about">Mạng lưới 100+ Quốc gia</a></li>
+                        <li><a class="hover:text-white transition" href="#partners">Tin tức &amp; Sự kiện</a></li>
+                        <li><a class="hover:text-white transition" href="#contact">Cơ hội nghề nghiệp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bottom Sub-Footer Bar -->
+            <div
+                class="border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] gap-4">
+                <div>
+                    <p>© 2025 Behn Meyer Vietnam. All rights reserved. A member of Behn Meyer Group.</p>
+                </div>
+                <!-- Social Icons & Lang -->
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-3 text-slate-400">
+                        <a aria-label="LinkedIn"
+                            class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-blue hover:text-white flex items-center justify-center transition"
+                            href="#">
+                            <i class="fa-brands fa-linkedin-in text-xs"></i>
+                        </a>
+                        <a aria-label="Facebook"
+                            class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-blue hover:text-white flex items-center justify-center transition"
+                            href="#">
+                            <i class="fa-brands fa-facebook-f text-xs"></i>
+                        </a>
+                        <a aria-label="YouTube"
+                            class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-blue hover:text-white flex items-center justify-center transition"
+                            href="#">
+                            <i class="fa-brands fa-youtube text-xs"></i>
+                        </a>
+                    </div>
+                    <span class="text-slate-700">|</span>
+                    <div class="flex items-center space-x-2 text-slate-400">
+                        <span class="text-white font-semibold">VN</span>
+                        <span>-</span>
+                        <span class="hover:text-white cursor-pointer">EN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: MainFooter -->
+</body>
+
+</html>
